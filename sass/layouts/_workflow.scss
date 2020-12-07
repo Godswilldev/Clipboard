@@ -1,0 +1,53 @@
+.workflow {
+    margin-top: 10rem;
+    max-width: 80%;
+    margin: 0 auto;
+
+    &-features {
+        display: flex;
+        margin: 7rem auto;
+        text-align: center;
+
+
+        img {
+            margin-bottom: 1.5rem;
+        }
+
+
+    }
+
+    &__item {
+
+
+        .small__paragraph {
+            padding: 0 3rem;
+        }
+    }
+}
+
+
+.section-logos{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15rem;
+
+    .logos{
+        &:not(:last-child){
+            margin-right: 8rem;
+
+        }
+    }
+}
+
+
+
+
+.section-uses{
+    margin-top: 15rem;
+    text-align: center;
+    .small__paragraph{
+        width: 45%;
+        margin: 0 auto;
+    }
+}

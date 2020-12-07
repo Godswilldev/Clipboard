@@ -1,0 +1,33 @@
+.main{
+    margin-top: 12rem;
+
+    &__heading{
+        text-align: center;
+
+        p{
+            
+        }
+    }
+
+    &__description{
+        margin-top: 8rem;
+        display: flex;
+
+        &--img{
+            margin-left: -5rem;
+        }
+
+        &--text{
+            margin-left: 15rem;
+            margin-top: 10rem;
+
+            .computer-text{
+                margin-bottom: 3rem;
+
+                p{
+                    padding-right: 20rem;
+                }
+            }
+        }
+    }
+}

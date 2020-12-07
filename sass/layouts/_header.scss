@@ -1,0 +1,29 @@
+.header {
+    text-align: center;
+    margin: 0 auto;
+
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .logo {
+        margin: 7rem 0 5rem 0;
+        text-align: center;
+
+    }
+
+    &__logo {
+        
+    }
+
+    &__buttons {
+        
+    }
+}
