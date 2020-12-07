@@ -93,7 +93,28 @@ body {
   text-align: center; }
 
 .footer {
-  background-color: #9fabb2; }
+  background-color: rgba(159, 171, 178, 0.5);
+  margin-top: 10rem;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__logo {
+    width: 6rem; }
+  .footer__links {
+    display: flex; }
+    .footer__links ul {
+      margin-right: 6rem;
+      font-size: 1.7rem;
+      line-height: 1.5; }
+    .footer__links li {
+      list-style: none;
+      margin-top: 2rem; }
+    .footer__links a {
+      text-decoration: none;
+      color: #4c545d; }
+  .footer__icons img {
+    margin-right: 2rem; }
 
 .header {
   text-align: center;
