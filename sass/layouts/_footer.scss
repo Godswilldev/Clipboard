@@ -12,22 +12,27 @@
 
     &__links {
         display: flex;
+        
 
         ul {
             margin-right: 6rem;
             font-size: 1.7rem;
             line-height: 1.5;
+            
         }
 
         li {
             list-style: none;
             margin-top: 2rem;
+            
         }
 
         a {
             text-decoration: none;
             color: $color-gray-dark;
-
+            &:hover{
+                color: $color-primary;
+            }
         }
     }
 

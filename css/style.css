@@ -113,6 +113,8 @@ body {
     .footer__links a {
       text-decoration: none;
       color: #4c545d; }
+      .footer__links a:hover {
+        color: #26baa4; }
   .footer__icons img {
     margin-right: 2rem; }
 
