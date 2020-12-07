@@ -9,4 +9,22 @@ html {
 
 body {
   font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
   background-color: #4c545d; }
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #26baa4;
+  padding: 2.5rem 4rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 10rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  position: relative; }
+  .btn a {
+    margin: 10rem; }

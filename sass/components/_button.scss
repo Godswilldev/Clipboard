@@ -1,0 +1,19 @@
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    background-color: $color-primary;
+    padding: 2.5rem 4rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 10rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    
+    a{
+        margin: 10rem;
+    }
+}
