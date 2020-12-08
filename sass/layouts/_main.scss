@@ -1,31 +1,60 @@
-.main{
+.main {
     margin-top: 12rem;
 
-    &__heading{
+    @include respond(phone) {
+        margin-top: 9rem;
+    }
+
+    &__heading {
         text-align: center;
 
-        p{
-            
+
+    }
+
+    p {
+        @include respond(phone) {
+            padding: 0 1.5rem;
         }
     }
 
-    &__description{
+    &__description {
         margin-top: 8rem;
         display: flex;
 
-        &--img{
-            margin-left: -5rem;
+        @include respond(phone) {
+            flex-direction: column;
+            text-align: center;
         }
 
-        &--text{
+        &--img {
+            margin-left: -5rem;
+
+            @include respond(phone) {
+                width: 70%;
+                margin: 0;
+            }
+        }
+
+        &--text {
             margin-left: 15rem;
             margin-top: 10rem;
 
-            .computer-text{
+            @include respond(phone) {
+                text-align: center;
+                margin: 5rem auto;
+            }
+
+            .computer-text {
                 margin-bottom: 3rem;
 
-                p{
+                p {
                     padding-right: 20rem;
+
+                    @include respond(phone) {
+                        padding: 0;
+                        width: 80%;
+                        margin: 0 auto;
+                    }
                 }
             }
         }

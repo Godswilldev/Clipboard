@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -16,18 +33,28 @@ body {
   font-weight: 600;
   color: #4c545d;
   margin-bottom: 2.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header__primary {
+      font-size: 3rem;
+      padding: 0 1rem; } }
 
 .header__secondary {
   font-size: 3rem;
   font-weight: 600;
   color: #4c545d;
   margin-bottom: 2.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header__secondary {
+      font-size: 2.5rem; } }
 
 .header__tertiary {
   font-size: 2rem;
   font-weight: 600;
   color: #4c545d;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header__tertiary {
+      font-size: 1.5rem; } }
 
 .big__paragraph {
   color: #9fabb2;
@@ -41,7 +68,11 @@ body {
 
 .btn {
   margin-right: 2rem;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      margin-top: 3rem; } }
   .btn, .btn:link, .btn:visited {
     font-weight: 600;
     text-decoration: none;
@@ -87,10 +118,15 @@ body {
 
 .devices {
   margin-top: 15rem; }
+  @media only screen and (max-width: 37.5em) {
+    .devices {
+      margin-top: 5rem; } }
 
 .device {
   margin-top: 10rem;
   text-align: center; }
+  .device__img {
+    width: 70%; }
 
 .footer {
   background-color: rgba(159, 171, 178, 0.5);
@@ -99,28 +135,48 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      display: flex;
+      flex-direction: column; } }
   .footer__logo {
     width: 6rem; }
   .footer__links {
     display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__links {
+        flex-direction: column; } }
     .footer__links ul {
       margin-right: 6rem;
       font-size: 1.7rem;
       line-height: 1.5; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__links ul {
+          margin: 0;
+          text-align: center; } }
     .footer__links li {
       list-style: none;
       margin-top: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__links li {
+          margin: 2rem 0; } }
     .footer__links a {
       text-decoration: none;
       color: #4c545d; }
       .footer__links a:hover {
         color: #26baa4; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__icons {
+      margin-bottom: 3rem; } }
   .footer__icons img {
     margin-right: 2rem; }
 
 .header {
   text-align: center;
   margin: 0 auto; }
+  @media only screen and (max-width: 37.5em) {
+    .header p {
+      padding: 0 1rem; } }
   .header-background {
     position: absolute;
     top: 0;
@@ -130,23 +186,54 @@ body {
   .header .logo {
     margin: 7rem 0 5rem 0;
     text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .header__logo {
+      width: 30%; } }
+  @media only screen and (max-width: 37.5em) {
+    .header__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .main {
   margin-top: 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      margin-top: 9rem; } }
   .main__heading {
     text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .main p {
+      padding: 0 1.5rem; } }
   .main__description {
     margin-top: 8rem;
     display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .main__description {
+        flex-direction: column;
+        text-align: center; } }
     .main__description--img {
       margin-left: -5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .main__description--img {
+          width: 70%;
+          margin: 0; } }
     .main__description--text {
       margin-left: 15rem;
       margin-top: 10rem; }
+      @media only screen and (max-width: 37.5em) {
+        .main__description--text {
+          text-align: center;
+          margin: 5rem auto; } }
       .main__description--text .computer-text {
         margin-bottom: 3rem; }
         .main__description--text .computer-text p {
           padding-right: 20rem; }
+          @media only screen and (max-width: 37.5em) {
+            .main__description--text .computer-text p {
+              padding: 0;
+              width: 80%;
+              margin: 0 auto; } }
 
 .workflow {
   margin-top: 10rem;
@@ -156,22 +243,48 @@ body {
     display: flex;
     margin: 7rem auto;
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .workflow-features {
+        display: flex;
+        flex-direction: column; } }
     .workflow-features img {
       margin-bottom: 1.5rem; }
   .workflow__item .small__paragraph {
     padding: 0 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .workflow__item .small__paragraph {
+        margin-bottom: 4rem;
+        padding: 0; } }
 
 .section-logos {
   width: 90%;
   margin: 0 auto;
   text-align: center;
   margin-top: 15rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 7rem; } }
   .section-logos .logos:not(:last-child) {
     margin-right: 8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section-logos .logos:not(:last-child) {
+        margin: 0;
+        margin-bottom: 5rem; } }
 
 .section-uses {
   margin-top: 15rem;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .section-uses {
+      margin-top: 10rem; } }
   .section-uses .small__paragraph {
     width: 45%;
     margin: 0 auto; }
+    @media only screen and (max-width: 37.5em) {
+      .section-uses .small__paragraph {
+        width: 100%; } }

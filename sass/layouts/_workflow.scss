@@ -8,6 +8,11 @@
         margin: 7rem auto;
         text-align: center;
 
+        @include respond(phone){
+            display: flex;
+            flex-direction: column;
+        }
+
 
         img {
             margin-bottom: 1.5rem;
@@ -21,6 +26,10 @@
 
         .small__paragraph {
             padding: 0 3rem;
+            @include respond(phone) {
+                margin-bottom: 4rem;
+                padding: 0;
+            }
         }
     }
 }
@@ -32,9 +41,23 @@
     text-align: center;
     margin-top: 15rem;
 
+    @include respond(phone){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 7rem;
+    }
+
     .logos{
         &:not(:last-child){
             margin-right: 8rem;
+
+            @include respond(phone){
+                margin: 0;
+                margin-bottom: 5rem;
+            }
 
         }
     }
@@ -46,8 +69,16 @@
 .section-uses{
     margin-top: 15rem;
     text-align: center;
+    @include respond(phone) {
+        margin-top: 10rem;
+    }
+
     .small__paragraph{
         width: 45%;
         margin: 0 auto;
+
+        @include respond(phone) {
+            width: 100%;
+        }
     }
 }

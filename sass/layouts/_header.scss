@@ -2,6 +2,12 @@
     text-align: center;
     margin: 0 auto;
 
+    p{
+        @include respond(phone){
+            padding: 0 1rem;
+         }
+    }
+
     &-background {
         position: absolute;
         top: 0;
@@ -20,10 +26,16 @@
     }
 
     &__logo {
-        
+        @include respond(phone){
+            width: 30%;
+         }
     }
 
     &__buttons {
-        
+        @include respond(phone){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

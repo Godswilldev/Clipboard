@@ -1,6 +1,10 @@
 .btn {
     margin-right: 2rem;
     margin-top: 5rem;
+    display: flex;
+    @include respond(phone){
+        margin-top: 3rem;
+    }
     &,
     &:link,
     &:visited {

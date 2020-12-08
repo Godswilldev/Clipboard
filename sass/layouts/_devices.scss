@@ -1,8 +1,15 @@
 .devices{
     margin-top: 15rem;
+
+    @include respond(phone) {
+        margin-top: 5rem;
+    }
 }
 
 .device{
     margin-top: 10rem;
     text-align: center;
+    &__img{
+        width: 70%;
+    }
 }

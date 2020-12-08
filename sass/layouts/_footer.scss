@@ -6,30 +6,48 @@
     justify-content: space-around;
     align-items: center;
 
+    @include respond(phone){
+        display: flex;
+        flex-direction: column;
+    }
+
     &__logo {
         width: 6rem;
     }
 
     &__links {
         display: flex;
+
+        @include respond(phone){
+            flex-direction: column;
+        }
         
 
         ul {
             margin-right: 6rem;
             font-size: 1.7rem;
             line-height: 1.5;
+
+            @include respond(phone){
+                margin: 0;
+                text-align: center;
+            }
             
         }
 
         li {
             list-style: none;
             margin-top: 2rem;
-            
+            @include respond(phone){
+                margin: 2rem 0;
+            }
         }
 
         a {
             text-decoration: none;
             color: $color-gray-dark;
+
+            
             &:hover{
                 color: $color-primary;
             }
@@ -37,6 +55,9 @@
     }
 
     &__icons {
+        @include respond(phone){
+            margin-bottom: 3rem;
+        }
 
         img {
             margin-right: 2rem;
